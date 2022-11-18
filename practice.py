@@ -35,8 +35,12 @@ def find_min(arr):
 
 def division(a, b):
     # This function is going to get the quotient of division and return it.
-    sleep(2)
-    return a/b
+    try:
+        quotient = a / b
+        return quotient
+    except ZeroDivisionError:
+        print('Cannot divide by zero.')
+    return "Cannot divide by zero."
 
 
 # Press the green button in the gutter to run the script.
